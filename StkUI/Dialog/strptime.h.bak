@@ -1,0 +1,12 @@
+#if	!defined( __SP_TIME_H__ )
+#define	__SP_TIME_H__
+
+#ifdef __cplusplus           
+extern "C" {                              
+#endif                                    
+extern char *strptime(const char *buf, const char *fmt, struct tm *tm);    
+#ifdef __cplusplus                        
+  }                                       
+#endif /* end of __cplusplus */   
+
+#endif	// __SP_TIME_H__ 
