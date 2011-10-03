@@ -150,6 +150,9 @@
     <ClCompile Include="SpValid.cpp">
       <Filter>SPBaseClass Files</Filter>
     </ClCompile>
+    <ClCompile Include="strptime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="StkLib.def">
@@ -278,6 +281,9 @@
     </ClInclude>
     <ClInclude Include="..\Include\SpTime.h">
       <Filter>SPBaseClass Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\strptime.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

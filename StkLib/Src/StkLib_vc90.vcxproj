@@ -389,6 +389,7 @@
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="strptime.cpp" />
     <ClCompile Include="StStore.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -604,6 +605,7 @@
     <ClInclude Include="..\Include\MathParser.h" />
     <ClInclude Include="..\Include\Packets.h" />
     <ClInclude Include="..\Include\Profile.h" />
+    <ClInclude Include="..\Include\strptime.h" />
     <ClInclude Include="QianLong.h" />
     <ClInclude Include="SelfDB.h" />
     <ClInclude Include="ShengLong.h" />

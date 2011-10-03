@@ -30,6 +30,8 @@ public:
 	CButton	m_btnCancel;
 	CButton	m_btnOK;
 	CString	m_excelFileName;
+	CButton m_btnExcelExplorer;
+	CEdit m_editExcelName;
 	int m_dataSize;
 
 	int GetDataSize();

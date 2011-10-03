@@ -540,6 +540,8 @@
 #define IDC_FILE_F10                    1323
 #define IDC_F10FILE_EXPLORER            1324
 #define IDC_EXCEL_EXPLORER              1326
+#define IDC_EDIT_EXCEL_NAME             1327
+#define IDC_STATIC_READ_EXCEL           1328
 #define ID_VIEW_SLIST                   32783
 #define ID_VIEW_REALTIME                32784
 #define ID_VIEW_MULTISORT               32785
@@ -1165,7 +1167,7 @@
 #define _APS_3D_CONTROLS                     1
 #define _APS_NEXT_RESOURCE_VALUE        294
 #define _APS_NEXT_COMMAND_VALUE         34596
-#define _APS_NEXT_CONTROL_VALUE         1327
+#define _APS_NEXT_CONTROL_VALUE         1329
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
