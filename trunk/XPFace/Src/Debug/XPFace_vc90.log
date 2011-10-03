@@ -1,5 +1,66 @@
-﻿生成启动时间为 2011-10-2 22:56:11。
+﻿生成启动时间为 2011-10-3 22:14:37。
+     1>项目“D:\STKing_lc\XPFace\Src\XPFace_vc90.vcxproj”在节点 3 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Debug\XPFace.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../Include /I../Include/GridCtrl /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D XPFACE_DLL /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /D _AFXDLL /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug/XPFace.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../Include /I../Include/GridCtrl /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D XPFACE_DLL /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /D _AFXDLL /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug/XPFace.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt Dialogs.cpp Dibapi.cpp HyperLink.cpp MagicEdit.cpp ModulVer.cpp SplashDlg.cpp XFDialog.cpp XPFace.cpp
+         Dialogs.cpp
+         Dibapi.cpp
+         HyperLink.cpp
+         MagicEdit.cpp
+         ModulVer.cpp
+         SplashDlg.cpp
+         XFDialog.cpp
+     1>d:\stking_lc\xpface\src\xfdialog.cpp(180): warning C4005: “_countof”: 宏重定义
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdlib.h(344) : 参见“_countof”的前一个定义
+         XPFace.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D AFX_RESOURCE_DLL /D AFX_TARG_CHS /D _VC80_UPGRADE=0x0710 /D _AFXDLL /l"0x0804" /nologo /fo".\Debug\XPFace.res" XPFace.rc 
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\XPFace.dll.embed.manifest.res" .\Debug\XPFace_manifest.rc 
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\STKing_lc\XPFace\Src\.\Debug\XPFace.dll) 与 Linker 的 OutputFile 属性值(D:\STKing_lc\Bin\XPFaceD.dll)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(XPFace) 与 Linker 的 OutputFile 属性值(XPFaceD)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+       Link:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../Bin/XPFaceD.dll" /INCREMENTAL /NOLOGO /LIBPATH:..\..\Lib ./htmlhelp/htmlhelp.lib /DEF:".\XPFace.def" /MANIFEST /ManifestFile:".\Debug\XPFace.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\STKing_lc\XPFace\Src\Debug\XPFace.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\Lib\XPFaceD.lib" /MACHINE:X86 /DLL .\Debug\XPFace.res
+         .\Debug\XPFace.dll.embed.manifest.res
+         .\Debug/Dialogs.obj
+         .\Debug/Dibapi.obj
+         .\Debug/HyperLink.obj
+         .\Debug/MagicEdit.obj
+         .\Debug/ModulVer.obj
+         .\Debug/SplashDlg.obj
+         .\Debug/StdAfx.obj
+         .\Debug/XFDialog.obj
+         .\Debug/XPFace.obj
+         LINK : 缺少程序数据库 D:\STKing_lc\XPFace\Src\Debug\XPFace.pdb；正在执行完全链接
+            正在创建库 ..\..\Lib\XPFaceD.lib 和对象 ..\..\Lib\XPFaceD.exp
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\XPFace.dll.embed.manifest" /manifest .\Debug\XPFace.dll.intermediate.manifest "D:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\XPFace.dll.embed.manifest.res" .\Debug\XPFace_manifest.rc 
+       LinkEmbedManifest:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../Bin/XPFaceD.dll" /INCREMENTAL /NOLOGO /LIBPATH:..\..\Lib ./htmlhelp/htmlhelp.lib /DEF:".\XPFace.def" /MANIFEST /ManifestFile:".\Debug\XPFace.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\STKing_lc\XPFace\Src\Debug\XPFace.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\Lib\XPFaceD.lib" /MACHINE:X86 /DLL .\Debug\XPFace.res
+         .\Debug\XPFace.dll.embed.manifest.res
+         .\Debug/Dialogs.obj
+         .\Debug/Dibapi.obj
+         .\Debug/HyperLink.obj
+         .\Debug/MagicEdit.obj
+         .\Debug/ModulVer.obj
+         .\Debug/SplashDlg.obj
+         .\Debug/StdAfx.obj
+         .\Debug/XFDialog.obj
+         .\Debug/XPFace.obj
+            正在创建库 ..\..\Lib\XPFaceD.lib 和对象 ..\..\Lib\XPFaceD.exp
+         XPFace_vc90.vcxproj -> D:\STKing_lc\XPFace\Src\.\Debug\XPFace.dll
+       BscMake:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\Debug\XPFace.bsc" .\Debug\Dialogs.sbr .\Debug\Dibapi.sbr .\Debug\HyperLink.sbr .\Debug\MagicEdit.sbr .\Debug\ModulVer.sbr .\Debug\SplashDlg.sbr .\Debug\StdAfx.sbr .\Debug\XFDialog.sbr .\Debug\XPFace.sbr
+       FinalizeBuildStatus:
+         正在删除文件“.\Debug\XPFace.unsuccessfulbuild”。
+         正在对“.\Debug\XPFace.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\STKing_lc\XPFace\Src\XPFace_vc90.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.01
+已用时间 00:00:35.20

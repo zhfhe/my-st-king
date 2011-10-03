@@ -160,7 +160,6 @@
     <ClCompile Include="Dialog\excel9.cpp" />
     <ClCompile Include="Dialog\MyExcel.cpp" />
     <ClCompile Include="Dialog\MyExcelReadDlg.cpp" />
-    <ClCompile Include="Dialog\strptime.cpp" />
     <ClCompile Include="GridCtrl.cpp" />
     <ClCompile Include="GridDropTarget.cpp" />
     <ClCompile Include="InPlaceEdit.cpp" />
@@ -1300,7 +1299,6 @@
     <ClInclude Include="Dialog\excel9.h" />
     <ClInclude Include="Dialog\MyExcel.h" />
     <ClInclude Include="Dialog\MyExcelReadDlg.h" />
-    <ClInclude Include="Dialog\strptime.h" />
     <ClInclude Include="GridCtrl.h" />
     <ClInclude Include="GridDropTarget.h" />
     <ClInclude Include="InPlaceEdit.h" />

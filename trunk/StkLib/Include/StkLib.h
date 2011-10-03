@@ -94,6 +94,7 @@
 #include	"DayTrader.h"
 #include	"AfxCore.h"
 #include	"Packets.h"
+#include    "strptime.h"
 
 
 #endif // __STKLIB_STKLIB_H__

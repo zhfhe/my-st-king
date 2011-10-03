@@ -398,9 +398,6 @@
     <ClCompile Include="Dialog\excel9.cpp">
       <Filter>Dialog Files</Filter>
     </ClCompile>
-    <ClCompile Include="Dialog\strptime.cpp">
-      <Filter>Dialog Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="StkUI.rc">
@@ -784,9 +781,6 @@
       <Filter>Dialog Files</Filter>
     </ClInclude>
     <ClInclude Include="Dialog\excel9.h">
-      <Filter>Dialog Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Dialog\strptime.h">
       <Filter>Dialog Files</Filter>
     </ClInclude>
   </ItemGroup>

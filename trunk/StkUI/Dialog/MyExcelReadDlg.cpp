@@ -8,7 +8,7 @@
 #include "memory.h"
 #include <time.h>
 #include <atlbase.h>
-#include "strptime.h"
+
 
 // CMyExcelReadDlg ¶Ô»°¿ò
 
@@ -27,8 +27,16 @@ CMyExcelReadDlg::~CMyExcelReadDlg()
 void CMyExcelReadDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	//{{AFX_DATA_MAP(CDataSrcDlg)
+	DDX_Control(pDX, IDCANCEL, m_btnCancel);
+	DDX_Control(pDX, IDOK, m_btnOK);
+	DDX_Control(pDX, IDC_EXCEL_EXPLORER, m_btnExcelExplorer);
+	DDX_Control(pDX, IDC_EDIT_EXCEL_NAME, m_editExcelName);
+	DDX_Text(pDX, IDC_EDIT_EXCEL_NAME, m_excelFileName);
+	//}}AFX_DATA_MAP
 }
 
+//IDC_STATIC_READ_EXCEL
 
 BEGIN_MESSAGE_MAP(CMyExcelReadDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_EXCEL_EXPLORER, OnExcelExplorer)
@@ -49,10 +57,11 @@ void CMyExcelReadDlg::OnExcelExplorer()
 	if( IDOK == nResult )
 	{
 		m_excelFileName = dlg.GetPathName();
-
+		
+		//use UpdateData(FALSE) to show m_excelFileName to window.
+		UpdateData( FALSE );		
 	}
 
-	
 }
 
 
@@ -87,7 +96,7 @@ KDATA * CMyExcelReadDlg::GetPKDATA()
 		
 				
 	//init data Array
-	//need add code for malloc failure
+	//pKData will be freed in OnReadExcelData()
 	pKData = (KDATA *)malloc(m_dataSize * sizeof(KDATA));
 	memset( pKData, 0, m_dataSize * sizeof(KDATA) );	
 
@@ -108,6 +117,7 @@ KDATA * CMyExcelReadDlg::GetPKDATA()
 
 
 	ExcelMain.Exit();
+	
 	free(pTemptime);
 
 	return pKData;
